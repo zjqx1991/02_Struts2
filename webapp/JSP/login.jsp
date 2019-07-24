@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/p/p1" method="POST">
+	<h2>请登陆</h2>
+	<form action="/l/login" method="POST">
 	账号：<input name="name" type="text" >
 	<br/>
 	密码：<input name="password" type="text" >

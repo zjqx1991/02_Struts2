@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="LoginPkg" extends="struts-default" namespace="/l" >
+		<action name="login" class="com.revanwang.interceptor.LoginAction" method="checkLogin" >
+			<result name="loginSuccess" type="redirectAction" >h</result>
+		</action>
+		
+		<!-- 主页 -->
+		<action name="h" class="com.revanwang.interceptor.HomeAction" method="home" >
+			<result name="home" type="dispatcher">/WEB-INF/JSP/home.jsp</result>
+		</action>
+		
+	</package>
+</struts>

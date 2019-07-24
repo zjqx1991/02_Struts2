@@ -16,19 +16,19 @@ public class Param1Action extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 	
 	//直接定义参数名称
-	private String name;
-	private String password;
+	private String n;
+	private String p;
 	
 	public void setName(String name) {
-		this.name = name;
+		this.n = name;
 	}
 	
 	public void setPassword(String password) {
-		this.password = password;
+		this.p = password;
 	}
 
 	public void param1() {
-		System.out.println(this.name);
-		System.out.println(this.password);
+		System.out.println(this.n);
+		System.out.println(this.p);
 	}
 }

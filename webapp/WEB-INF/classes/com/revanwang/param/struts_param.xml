@@ -4,9 +4,18 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-	
 	<package name="paramPkg" extends="struts-default" namespace="/p" >
+		<!-- 1、获取参数方法一 -->
 		<action name="p1" class="com.revanwang.param.Param1Action" method="param1" ></action>
+		
+		<!-- 2、获取参数方法二 -->
+		<action name="p2" class="com.revanwang.param.Param2Action" method="Param2" ></action>
+		
+		<!-- 3、获取参数方法三 -->
+		<action name="p3" class="com.revanwang.param.Param3Action" method="param3" ></action>
+		
 	</package>
+	
+	
 	
 </struts>

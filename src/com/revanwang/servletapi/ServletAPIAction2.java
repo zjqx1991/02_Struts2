@@ -26,8 +26,8 @@ public class ServletAPIAction2 extends ActionSupport {
 		System.out.println("servletAPI2: " + ServletActionContext.getRequest().getParameter("name"));
 		System.out.println("servletAPI2: " + ServletActionContext.getRequest().getParameter("age"));
 		
-		ServletActionContext.getRequest().setAttribute("name", ServletActionContext.getRequest().getParameter("name"));
-		
+//		ServletActionContext.getRequest().setAttribute("name", ServletActionContext.getRequest().getParameter("name"));
+		ServletActionContext.getRequest().getSession().setAttribute("name", ServletActionContext.getRequest().getParameter("name"));
 		return "api_2";
 	}
 

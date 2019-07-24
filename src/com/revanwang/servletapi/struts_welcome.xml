@@ -16,11 +16,15 @@
 		<!-- 返回界面 -->
 		</action>
 		
-		<!-- 2、第一种方式在 Action 中获取Servlet中的对象 -->
+		<!-- 2、第二种方式在 Action 中获取Servlet中的对象 -->
 		<action name="sapi2" class="com.revanwang.servletapi.ServletAPIAction2" method="servletAPI2" >
 			<!-- 返回界面 -->
 			<result name="api_2" type="dispatcher" >/WEB-INF/JSP/servletAPI2.jsp</result>
 		</action>
 		
+		<!-- 3、第三种方式在 Action 中获取Servlet中的对象 -->
+		<action name="sapi3" class="com.revanwang.servletapi.ServletAPIAction3" method="servletAPI3" >
+			<result name="api_3" type="dispatcher" >/WEB-INF/JSP/servletAPI3.jsp</result>
+		</action>
 	</package>
 </struts>

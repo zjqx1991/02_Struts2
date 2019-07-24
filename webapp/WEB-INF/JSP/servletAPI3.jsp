@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	${session.name}
+	${name}
 </body>
 </html>

@@ -4,5 +4,9 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-	<include file="com/revanwang/param/struts_param.xml"></include>
+	
+	<package name="paramPkg" extends="struts-default" namespace="/p" >
+		<action name="p1" class="com.revanwang.param.Param1Action" method="param1" ></action>
+	</package>
+	
 </struts>
